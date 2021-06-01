@@ -43,12 +43,20 @@ h3 {
   font-size: 2rem;
 }
 
+p {
+  line-height: 2.4rem;
+}
+
 button {
   font-family: 'Open Sans', sans-serif;
   text-transform: capitalize;
   border-radius: 2rem;
   cursor: pointer;
   transition: all .4s ease-in-out;
+}
+
+.desktop {
+  display: none;
 }
 
 /*----------------------
@@ -318,4 +326,190 @@ ul li:hover {
 
 ul li i {
   color: var(--very-dark-cyan);
+}
+
+/*----------------------
+---- Desktop styles ----
+----------------------*/
+
+@media screen and (min-width: 990px) {
+  
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  /*----------------------
+  ------- Header ---------
+  ----------------------*/
+
+  header {
+    max-width: 129.7rem;
+    margin: 7.8rem auto 23.3rem;
+  }
+  
+  
+
+  header img {
+    width: 24rem;
+    height: 3.8rem;
+  }
+
+  header button {
+    font-size: 1.6rem;
+    padding: .9rem 3rem;
+  }
+
+  /*----------------------
+  ------ Section 1 -------
+  ----------------------*/
+
+  h1 {
+    font-size: 4.8rem;
+  }
+
+  .section-1 {
+    max-width: 101.6rem;
+  }
+
+  .section-1 p {
+    font-size: 2rem;
+    max-width: 60rem;
+    margin: 0 auto 5rem;
+  }
+
+  .section-1 button,
+  .section-6 button {
+    font-size: 2rem;
+    padding: 2.7rem 10rem;
+    border-radius: 5rem;
+  }
+
+  /*----------------------
+  ------ Section 2 -------
+  ----------------------*/
+
+  .section-2 {
+    max-width: 87.9rem;
+    justify-content: space-between;
+    margin-bottom: 13.4rem;
+  }
+
+  .section-2 img {
+    width: 5.6rem;
+  }
+
+  .section-2 h4 {
+    font-size: 9.6rem;
+  }
+
+  .section-2 p {
+    font-size: 2.4rem;
+  }
+
+  /*----------------------
+  ------ Section 3 -------
+  ----------------------*/
+
+  .mobile {
+    display: none;
+  }
+
+  .section-3 .flex,
+  .section-5 .flex {
+    flex-direction: row-reverse;
+    text-align: left;
+  }
+
+  h3 {
+    font-size: 4rem;
+  }
+
+  .text-box {
+    max-width: 52rem;
+  }
+
+  .image-box {
+    max-width: 56rem;
+  }
+
+  /*----------------------
+  ------ Section 4 -------
+  ----------------------*/
+
+  .section-4 .flex {
+    text-align: left;
+  }
+
+  /*----------------------
+  ------ Section 6 -------
+  ----------------------*/
+
+  .section-6 {
+    margin-top: 14.6rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  /*----------------------
+  -------- Footer --------
+  ----------------------*/
+
+  footer > .flex {
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 10rem;
+  }
+
+  footer .curve {
+    transform: translateY(1rem);
+    width: 100vw;
+  }
+
+  footer .content {
+    max-width: 52rem;
+  }
+
+  footer .content p {
+    max-width: 39rem;
+  }
+
+  .contact,
+  .social {
+    justify-content: flex-start;
+  }
+
+  footer ul li {
+    margin-bottom: 10rem;
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+
+  footer h3 {
+    font-size: 2.4rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  form {
+    flex-direction: row;
+  }
+
+  input {
+    width: 32rem;
+    margin-right: 4rem;
+  }
+
+  form button {
+    font-size: 1.6rem;
+  }
 }
