@@ -344,6 +344,10 @@ ul li i {
     font-size: 1.6rem;
   }
 
+  .desktop {
+    display: block;
+  }
+
   /*----------------------
   ------- Header ---------
   ----------------------*/
@@ -352,8 +356,6 @@ ul li i {
     max-width: 129.7rem;
     margin: 7.8rem auto 23.3rem;
   }
-  
-  
 
   header img {
     width: 24rem;
